@@ -3,8 +3,8 @@
     $dsn = 'mysql:host=localhost;dbname=yummy_cake_db';
     $dbname = "yummy_cake_db";
     $host = "localhost";
-    $username = 'admin';
-    $password = 'password2023';
+    $username = 'admin'; // admin
+    $password = 'password2023'; // password2023
     $con = mysqli_connect($host, $username, $password, $dbname);
 
     try {

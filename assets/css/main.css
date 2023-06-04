@@ -1656,3 +1656,12 @@ section {
 
 
 
+.form {
+  width: 100%;
+  max-width: 650px;
+  background: #fff;
+  padding: 40px;
+  border-radius: 4px;
+  margin: 0 auto;
+  
+}

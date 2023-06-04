@@ -1,6 +1,17 @@
 <?php
     include('includes/bundle.php');
     include('includes/addtocart.php');
+
+    $cats = get_cats();
+
+    if(isset($_GET['catID']))
+    {
+    $_SESSION['catID'] = $_GET['catID'];
+    }
+    else
+    {
+    $_SESSION['catID'] = 0;
+    }  
     
     if (isset($_GET['cat_id'])) {
         $category_id = $_GET['cat_id'];
@@ -12,6 +23,25 @@
     $products = get_products_by_cat($category_id);
         
 ?>
+ 
+ <section id="menu" class="menu">
+    <div class="container" data-aos="fade-up">
+
+        <!-- List of the Menu starts -->
+        <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
+
+        <?php foreach($cats as $cat) { ?>
+            <li class="nav-item">
+                <a class="nav-link <?php if($_SESSION['catID'] == $cat['catID']) { echo 'active show'; } ?>" href="product.php?cat_id=<?php echo $cat['catID']; ?>">
+                    <h4><?php echo $cat['catName']; ?></h4>
+                </a>
+            </li>
+        <?php } ?>
+
+        </ul>
+        
+    </div>
+</section>
  
 <section class='menu'>
    <div class="tab-content" data-aos="fade-up" data-aos-delay="300" style='text-align:center;'>

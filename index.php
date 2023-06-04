@@ -68,7 +68,7 @@
                     <?php echo $p['productDesc']; ?>
                     </p>
                     <p class="price">
-                    <?php echo $p['productPrice']; ?>
+                    $<?php echo $p['productPrice']; ?>
                     </p>
                 <form method="Post" class="d-flex align-items-center mb-4 pt-2" style='margin-left:80px;' >
                     <div class="input-group quantity mr-3" style="width: 130px;">
