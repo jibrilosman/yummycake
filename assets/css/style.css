@@ -46,8 +46,7 @@
     to {bottom: 0; opacity: 0;}
   }
 
-  /* .form {
-    width: 100%;
+  .back-btn {
     display: flex;
-    flex-direction: column;
-  } */
+    justify-content: space-between;
+  }

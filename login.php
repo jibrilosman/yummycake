@@ -27,7 +27,8 @@
 ?>
 
 
-<section class="vh-100 bg-image">
+<section class="vh-100 bg-image"
+style="background: url('assets/images/42446.jpg');background-size:contain;">
   <div class="mask d-flex align-items-center h-100 gradient-custom-3">
     <div class="container h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">

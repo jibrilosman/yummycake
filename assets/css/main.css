@@ -1655,7 +1655,7 @@ section {
 }
 
 
-
+/* 
 .form {
   width: 100%;
   max-width: 650px;
@@ -1665,3 +1665,7 @@ section {
   margin: 0 auto;
   
 }
+.back-btn {
+  display: flex;
+  justify-content: space-between;
+} */

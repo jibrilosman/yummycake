@@ -15,6 +15,7 @@
         header("Location: index.php");
         exit();
     }
+  
     
 ?>
 
@@ -56,11 +57,17 @@
                     </tr>
                 </tbody>
             </table>
-            <form method="POST">
-                <button name="deleteAll" type="submit" class="btn btn-block text-uppercase btn-warning font-weight-bold my-3 py-3">
-                    continue checkout
-                </button>
-            </form>
+            <br>
+            <div style="display:flex; justify-content:space-between;">
+                <form method="POST">
+                    <button name="deleteAll" type="submit" class="btn btn-block text-uppercase btn-warning font-weight-bold my-3 py-3">
+                        continue shopping
+                    </button>
+                </form>
+                    <button  type="submit" onclick="printPage()" class="btn btn-block text-uppercase btn-warning font-weight-bold my-3 py-3">
+                        Print Receipt
+                    </button>
+            </div>
         </div>
     </div>
 </section>
