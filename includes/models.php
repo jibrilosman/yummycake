@@ -6,4 +6,5 @@
     include('models/user_model.php');
     include('models/cart_model.php');
     include('models/item_model.php');
+    include('models/address_model.php');
 ?>

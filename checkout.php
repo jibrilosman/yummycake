@@ -27,7 +27,7 @@
 
     // close cart 
     if(isset($_POST['completePurchase']) && isset($_SESSION['session_userID'])) {
-        header("Location: thankyou.php");
+        header("Location: client.php");
         exit();
     }
     

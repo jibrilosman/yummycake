@@ -13,8 +13,8 @@
 ?>
 
 
-<section class="vh-100 bg-image"
-  style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');background-size:contain;background-repeat:no-repeat">
+<section class="bg-image"
+  style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');background-size:cover;background-repeat:no-repeat">
   <div class="mask d-flex align-items-center h-100 gradient-custom-3">
     <div class="container h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
@@ -24,25 +24,27 @@
               <h2 class="text-uppercase text-center mb-5">Create an account</h2>
 
               <form method='Post'>
-
                 <div class="form-outline mb-4">
-                  <input type="text" id="form3Example1cg" name='userName' class="form-control form-control-lg" />
+                  <input type="text" id="form3Example1cg" name='userName' class="form-control form-control-lg" required />
                   <label class="form-label" for="form3Example1cg">User Name</label>
                 </div>
 
                 <div class="form-outline mb-4">
-                  <input type="email" id="form3Example3cg" name='email' class="form-control form-control-lg" />
+                  <input type="email" id="form3Example3cg" name='email' class="form-control form-control-lg" required />
                   <label class="form-label" for="form3Example3cg">Your Email</label>
                 </div>
 
                 <div class="form-outline mb-4">
-                  <input type="password" id="form3Example4cg" name='password' class="form-control form-control-lg" />
+                  <input type="password" id="form3Example4cg" name='password' class="form-control form-control-lg" required />
                   <label class="form-label" for="form3Example4cg">Password</label>
                 </div>
 
                 <div class="d-flex justify-content-center">
                   <button
-                    class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Register</button>
+                    class="btn btn-success btn-block btn-lg gradient-custom-4 ">
+                    <i class="fa-solid fa-user-plus fa-beat"></i>&nbsp
+                    Sign up
+                  </button>
                 </div>
 
                 <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="login.php"

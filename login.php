@@ -47,7 +47,7 @@ style="background: url('assets/images/42446.jpg');background-size:contain;">
               echo "<form method='Post'>";
 
                 echo "<div class='form-outline mb-4'>";
-                echo "<input type='text' id='form3Example1cg' name='userName' class='form-control form-control-lg' />";
+                echo "<input type='text' id='form3Example1cg' name='userName' class='form-control form-control-lg' required />";
                 echo "<label class='form-label' for='form3Example1cg'>User Name</label>";
                 echo "</div>";
 
@@ -57,12 +57,14 @@ style="background: url('assets/images/42446.jpg');background-size:contain;">
                 // echo "</div>";
 
                 echo "<div class='form-outline mb-4'>";
-                echo "<input type='password' id='form3Example1cg' name='password' class='form-control form-control-lg' />";
+                echo "<input type='password' id='form3Example1cg' name='password' class='form-control form-control-lg' required />";
                 echo "<label class='form-label' for='form3Example1cg'>Password</label>";
                 echo "</div>";
 
-                echo "<div class='d-flex justify-content-center'>";
-                echo "<button class='btn btn-success btn-block btn-lg gradient-custom-4 text-body'>Login</button>";
+                echo "<div class='d-flex justify-content-center '>";
+                echo "<button class='btn btn-success  btn-block btn-lg gradient-custom-4 '>Login&nbsp&nbsp";
+                echo "<i class='fa fa-right-to-bracket fa-beat text-white'></i>";
+                echo "</button>";
                 echo "</div>";
 
                 echo "<p class='text-center text-muted mt-5 mb-0'>Not a user!! "; 
