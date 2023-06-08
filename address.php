@@ -6,8 +6,8 @@
         $firstName = $_POST['firstName'];
         $lastName = $_POST['lastName'];
         $companyName = $_POST['companyName'];
-        $address = $_POST['address'];
-        $address = $_POST['postalCode'];
+        $homeAddress = $_POST['homeAddress'];
+        $postalCode = $_POST['postalCode'];
         $email = $_POST['email'];
         $phone = $_POST['phone'];
         $information = $_POST['information'];
@@ -16,8 +16,8 @@
             'firstName' => $firstName,
             'lastName' => $lastName,
             'companyName' => $companyName,
-            'address' => $address,
-            'postalCode' => $address,
+            'homeAddress' => $homeAddress,
+            'postalCode' => $postalCode,
             'email' => $email,
             'phone' => $phone,
             'information' => $information
@@ -69,7 +69,7 @@
 
                 <!-- Text input -->
                 <div class="form-outline mb-4">
-                    <input type="text" id="form7Example4" name="address" class="form-control" required />
+                    <input type="text" id="form7Example4" name="homeAddress" class="form-control" required />
                     <label class="form-label" for="form7Example4">Address</label>
                 </div>
                 <div class="form-outline mb-4">

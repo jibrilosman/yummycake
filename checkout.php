@@ -14,6 +14,7 @@
 
     // Retrieve values from the cartItems array
     $subtotal = $cartItems['subtotal'];
+
     $tax = $cartItems['tax'];
     $shipping = $cartItems['shipping'];
     $grandTotal = $cartItems['grandTotal'];
@@ -30,10 +31,7 @@
         header("Location: client.php");
         exit();
     }
-    
-    
-    
-    
+      
 ?>
 
 <div class="d-flex justify-content-center flex-nowrap">
@@ -67,20 +65,24 @@
                         <td class="align-middle">
                             <div class="input-group quantity mx-auto" style="width: 100px;">
                                 <!-- <div class="input-group-btn">
-                                    <button class="btn btn-sm btn-primary btn-minus" >
+                                    <button class="btn btn-sm btn-primary btn-minus">
                                     <i class="fa fa-minus"></i>
                                     </button>
                                 </div> -->
-                                <input type="number" readonly class="form-control form-control-sm bg-light border-0 text-center" value=<?php echo $c['Qty']; ?> >
+                                <input type="number" name="qty" class="form-control form-control-sm bg-light border-0 text-center"  value=<?php echo $c['Qty']; ?> >
+
                                 <input type="hidden" name="productID" value="<?php echo $p['productID']; ?>" />
-                                <!-- <div class="input-group-btn">
+<!-- 
+                                <div class="input-group-btn">
                                     <button class="btn btn-sm btn-primary btn-plus">
                                         <i class="fa fa-plus"></i>
                                     </button>
                                 </div> -->
+
                             </div>
                         </td>
-                        <td class="align-middle">$<?php echo $c['Subtotal']; ?></td>
+                        <td class="align-middle">$<?php echo $subtotal; ?> </td>
+                        
                         <td class="align-middle">
                           <form method="POST">
                             <input type="hidden" name="itemID" value="<?php echo $c['Item']; ?>" />
@@ -120,7 +122,7 @@
                         </div>
                         <form method="POST">
                             <button name="completePurchase" type="submit" class="btn btn-block text-uppercase btn-warning font-weight-bold my-3 py-3">
-                                continue checkout
+                                continue to checkout
                             </button>
                         </form>
                        
@@ -134,3 +136,25 @@
 <?php
     include('components/footer.php');    
 ?>
+
+
+<script>
+$(document).ready(function() {
+    // Get the initial quantity value
+    var quantity = parseInt($('[name="qty"]').val());
+
+    // Increase quantity
+    $('.btn-plus').click(function() {
+        quantity++;
+        $('[name="qty"]').val(quantity);
+    });
+
+    // Decrease quantity
+    $('.btn-minus').click(function() {
+        if (quantity > 1) {
+            quantity--;
+            $('[name="qty"]').val(quantity);
+        }
+    });
+});
+</script>

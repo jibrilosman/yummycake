@@ -15,5 +15,13 @@
         $result = $db->query($query);
         return $result;
     } // end login
+
+    function get_user($userID) {
+        global $db;
+        $query = "SELECT * FROM user WHERE userID = '$userID'";
+        $result = $db->query($query);
+        $user = $result->fetch();
+        return $user;
+    } // end get_user
     
 ?>

@@ -3,10 +3,11 @@
     include('includes/bundle.php');
     require_once('vendor/autoload.php');
 
-    $cartID = 0;
-    if(isset($_GET['cart_id'])) {
-        $cartID = $_GET['cart_id'];
-    }
+   
+    // $cartID = 0;
+    // if(isset($_GET['cart_id'])) {
+    //     $cartID = $_GET['cart_id'];
+    // }
     $cart = get_cart_items($cartID);
     
 // calculate cart totals 
@@ -29,7 +30,7 @@
             'currency' => 'cad',
             'unit_amount' => $grandTotal * 100,
             'product_data' => [
-                'name' => 'Name',
+                'name' => 'Yummy Cake',
                 'images' => ["https://i.imgur.com/EHyR2nP.png"],
             ],
             ],
@@ -44,7 +45,6 @@
 
 <div>
     <script src="https://js.stripe.com/v3/"></script>
-    <!-- <script src="js/checkout.js"></script> -->
     <div class="col-lg-5 container align-items-center">
                
                <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-success text-light pr-3">Cart Summary</span></h5>

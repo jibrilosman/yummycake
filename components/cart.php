@@ -15,7 +15,7 @@
         // do nothing
     }
 ?>
- <a class='book-a-table-btn scrollto d-none d-lg-flex' href='checkout.php?cart_id=<?php echo $cartID ?>' >
+ <a class=' scrollto  d-lg-flex' href='checkout.php?cart_id=<?php echo $cartID ?>' >
    <i class='fa-solid fa-cart-shopping text-warning fa-2xl'>
         <small class='badge  border border-secondary rounded-circle' style='color:#f00;'> 
           <?php echo $count ?> 
