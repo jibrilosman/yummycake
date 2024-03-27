@@ -1,10 +1,10 @@
 // db_model.php
 <?php
-    $dsn = 'mysql:host=localhost;dbname=yummy_cake_db';
+    $dsn = 'mysql:host=localhost;dbname=jibrmjum_database'; // yummy_cake_db
     $dbname = "yummy_cake_db";
     $host = "localhost";
-    $username = 'admin'; // admin
-    $password = 'password2023'; // password2023
+    $username = 'jibrmjum_user'; // admin
+    $password = '8vxFz4S7I1BO'; // password2023
     $con = mysqli_connect($host, $username, $password, $dbname);
 
     try {
